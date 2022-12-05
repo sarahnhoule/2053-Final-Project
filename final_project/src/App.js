@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function OneApp() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          This is where our final project will appear
+          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -22,4 +22,43 @@ function App() {
   );
 }
 
+  function App() {
+    const apps=[];
+    for (let i=0;i<=10;i++){
+      apps.push(<OneApp />);
+    }
+    return(
+    <div>
+      {apps}
+    </div>
+    )
+  }
+
+
+
 export default App;
+
+
+// import './App.css';
+// import React,{useState} from 'react';
+
+
+// function Example() {
+// const[count,setCount] = useState(0);
+
+
+// const increaseLikes = () => {
+//   setCount(count+1);
+// }
+// return(
+// <div>
+//   <p> You clicked {count} times.</p>
+//   <button onClick={increaseLikes}>Click me</button>
+// </div>
+// )
+
+// }
+
+
+
+// export default Comment;
